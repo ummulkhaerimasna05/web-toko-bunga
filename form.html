@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Form</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <button onclick="window.location.href='index.html'" class="btn btn-secondary mt-3 mb-3">Back</button>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row text-center mb-4">
+            <div class="col">
+                <h2 id="shop-form" class="p-3 bg-light rounded">Shop Form</h2>
+            </div>
+        </div>
+        <form id="bouquetForm">
+            <div class="row g-3">
+                <div class="col-md-6 mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" required>
+                </div>
+                <div class="col-12 mb-3">
+                    <label for="bouquet" class="form-label">Type of Bouquet</label>
+                    <select class="form-select" id="bouquet" required>
+                        <option value="" selected disabled>Choose...</option>
+                        <option>Elysian Aura</option>
+                        <option>Fleur Serene</option>
+                        <option>Luna Whimsy</option>
+                        <option>Mystic Solstice</option>
+                        <option>Polaroid Money</option>
+                        <option>Snack Beauty</option>
+                    </select>
+                </div>
+                <div class="col-12 mb-3">
+                    <label for="note" class="form-label">Note</label>
+                    <textarea class="form-control" id="note" rows="3"></textarea>
+                </div>
+                <div class="col-12 mb-3">
+                    <label class="form-label">Payment Method:</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="paymentMethod" id="creditCard" value="creditCard" checked>
+                        <label class="form-check-label" for="creditCard">
+                            Credit Card
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="paymentMethod" id="payPal" value="payPal">
+                        <label class="form-check-label" for="payPal">
+                            PayPal
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="paymentMethod" id="bankTransfer" value="bankTransfer">
+                        <label class="form-check-label" for="bankTransfer">
+                            Bank Transfer
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Modal for displaying output -->
+    <div class="modal fade" id="outputModal" tabindex="-1" aria-labelledby="outputModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="outputModalLabel">Order Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modalBody">
+                    <!-- Output will be inserted here -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,52 @@
+.navbar {
+    background-color: #536153;
+  }
+  
+  .back-button {
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .back-button:hover {
+    background-color: #3e6b8e;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #fff;
+    transition: color 0.2s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #5ad26c;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f7f7f7;
+  }
+  
+  .btn-btn-custom:hover {
+    background-color: #c2d1c2;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(249, 247, 247, 0.2);
+  }
+  
+  .hero-section {
+    background-color: #9db392;
+  }
+  
+  .logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .shop {
+    background-color: #9db392;
+  }
